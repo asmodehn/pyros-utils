@@ -12,6 +12,11 @@ import time
 # importing current package
 import pyros_utils
 
+# importing ros stuff
+import roslaunch
+import rospy
+import rosnode
+
 # importing unittest and nose
 import unittest
 import nose
