@@ -15,8 +15,10 @@ env:
   matrix:
     - ROS_DISTRO=indigo ROS_FLOW=devel
     - ROS_DISTRO=indigo ROS_FLOW=install
+
     - ROS_DISTRO=jade ROS_FLOW=devel
     - ROS_DISTRO=jade ROS_FLOW=install
+
     - ROS_DISTRO=kinetic ROS_FLOW=devel
     - ROS_DISTRO=kinetic ROS_FLOW=install
 
