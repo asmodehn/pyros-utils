@@ -2,8 +2,8 @@
 Changelog for package pyros_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.3 (2016-12-22)
+------------------
 * adding trick to patch import behavior from rospy generated __init_\_ relay.
 * now using ros-shadow-fixed in docker for travis
 * fixing typo in travis_checks
