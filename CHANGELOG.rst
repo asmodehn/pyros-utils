@@ -2,8 +2,8 @@
 Changelog for package pyros_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.4 (2017-03-21)
+------------------
 * catkin > 0.2
 * Contributors: alexv
 
