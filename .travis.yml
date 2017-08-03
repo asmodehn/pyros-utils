@@ -10,19 +10,19 @@ branches:
 
 env:
   global:
-    - CATKIN_VERBOSE=true
-    - AFTER_SCRIPT=python -m nose pyros_utils
+    - VERBOSE_OUTPUT=true
+    - AFTER_SCRIPT="python -m nose pyros_utils"
   matrix:
     # We are only interested in shadow-fixed compatibility here
-    # - ROS_DISTRO="indigo" ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
-    - ROS_DISTRO="indigo" ROS_REPOSITORY_PATH=http://packages.ros.org/ros-shadow-fixed/ubuntu
-    # - ROS_DISTRO="indigo" PRERELEASE=true
-    # - ROS_DISTRO="kinetic"  ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
-    - ROS_DISTRO="kinetic"  ROS_REPOSITORY_PATH=http://packages.ros.org/ros-shadow-fixed/ubuntu
+    # - ROS_DISTRO="indigo"   ROS_REPO=ros-shadow-fixed
+    - ROS_DISTRO="indigo"     ROS_REPO=ros-shadow-fixed
+    # - ROS_DISTRO="indigo"   PRERELEASE=true
+    # - ROS_DISTRO="kinetic"  ROS_REPO=ros-shadow-fixed
+    - ROS_DISTRO="kinetic"    ROS_REPO=ros-shadow-fixed
     # - ROS_DISTRO="kinetic"  PRERELEASE=true
-    # - ROS_DISTRO="lunar"   ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu
-    - ROS_DISTRO="lunar"   ROS_REPOSITORY_PATH=http://packages.ros.org/ros-shadow-fixed/ubuntu
-    # - ROS_DISTRO="lunar"   PRERELEASE=true
+    # - ROS_DISTRO="lunar"    ROS_REPO=ros-shadow-fixed
+    - ROS_DISTRO="lunar"      ROS_REPO=ros-shadow-fixed
+    # - ROS_DISTRO="lunar"    PRERELEASE=true
 
 matrix:
   allow_failures:
