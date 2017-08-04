@@ -11,6 +11,7 @@ branches:
 env:
   global:
     - VERBOSE_OUTPUT=true
+    - WRITABLE_SOURCE=true # needed by pip (creates egg-info in source)
     - AFTER_SCRIPT="python -m nose pyros_utils"
   matrix:
     # We are only interested in shadow-fixed compatibility here
