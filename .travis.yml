@@ -14,9 +14,9 @@ env:
     - AFTER_SCRIPT="python -m nose pyros_utils"
   matrix:
     # We are only interested in shadow-fixed compatibility here
-    - DOCKER_IMAGE=indigo-trusty-shadow-fixed
-    - DOCKER_IMAGE=kinetic-xenial-shadow-fixed
-    - DOCKER_IMAGE=lunar-xenial-shadow-fixed
+    - DOCKER_IMAGE=rosindustrial/ci:indigo-trusty-shadow-fixed
+    - DOCKER_IMAGE=rosindustrial/ci:kinetic-xenial-shadow-fixed
+    - DOCKER_IMAGE=rosindustrial/ci:lunar-xenial-shadow-fixed
 
 install:
   - git clone -b target-repo-rw https://github.com/ipa-mdl/industrial_ci.git .ci_config
