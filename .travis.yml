@@ -13,6 +13,7 @@ env:
     - VERBOSE_OUTPUT=true
     - WRITABLE_SOURCE=true # needed by pip (creates egg-info in source)
     - AFTER_SCRIPT="python -m nose pyros_utils"
+    - CATKIN_PARALLEL_JOBS="-p1"  # to avoid tests breaking each other
   matrix:
     # We are only interested in shadow-fixed compatibility here
     - ROS_DISTRO=indigo DOCKER_IMAGE=rosindustrial/ci:indigo-trusty-shadow-fixed
