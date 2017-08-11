@@ -12,7 +12,7 @@ env:
   global:
     - VERBOSE_OUTPUT=true
     - WRITABLE_SOURCE=true # needed by pip (creates egg-info in source)
-    - AFTER_SCRIPT="$CATKIN_WORKSPACE/install/env.sh python -m nose pyros_utils"
+    - AFTER_SCRIPT='$CATKIN_WORKSPACE/install/env.sh python -m nose pyros_utils'
     - ROS_PARALLEL_JOBS="-j1"  # to avoid tests breaking each other
   matrix:
     # We are only interested in shadow-fixed compatibility here
