@@ -23,7 +23,7 @@ install:
   - export REPOSITORY_NAME=pyros_utils
   # use the code already checked out by Travis
   - mkdir -p $JOB_PATH/catkin_workspace/src
-  - cp -R $TRAVIS_BUILD_DIR $JOB_PATH/catkin_workspace/src/
+  - cp -R $TRAVIS_BUILD_DIR $JOB_PATH/catkin_workspace/src/pyros_utils
   # generate the script to run a devel job for that target and repo
   - generate_devel_script.py https://raw.githubusercontent.com/ros-infrastructure/ros_buildfarm_config/production/index.yaml $ROS_DISTRO_NAME default $REPOSITORY_NAME $OS_NAME $OS_CODE_NAME $ARCH > $JOB_PATH/devel_job.sh
   - cd $JOB_PATH
